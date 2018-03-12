@@ -22,3 +22,21 @@ function appendDriver(name) {
   newAr.push(name);
   return newAr;
 }
+
+function prependDriver(name) {
+  let newAr = drivers.slice();
+  newAr.unshift(name);
+  return newAr;
+}
+
+function removeLastDriver() {
+  let newAr = drivers.slice();
+  newAr.pop();
+  return newAr;
+}
+
+function removeFirstDriver() {
+  let newAr = drivers.slice();
+  newAr.unshift();
+  return newAr;
+}
